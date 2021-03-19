@@ -3,13 +3,13 @@ DeepHarp is a tool that uses atlas based segmentation and Convolutional Neural N
 
 In order to use the tool take these steps:
 
-1- Download and install DeepMedic
+1- Download and install DeepMedic    ----> https://github.com/deepmedic/deepmedic
 
-2- Download and install NiftyReg
+2- Download and install NiftyReg  ---->  http://cmictig.cs.ucl.ac.uk/wiki/index.php/NiftyReg_install
 
-3-Download DeepHarp
+3-Download DeepHarp  
 
-4- Download and install vtk (documentation is included)
+4- Download and install vtk ---> https://anaconda.org/anaconda/vtk
 
 5- Place all the brain extracted T1 images in the folder Brains within DeepHarp folder.Make sure the extenstion is _Bet.nii
 
