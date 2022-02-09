@@ -32,10 +32,10 @@ name=${f%_Aladin.nii*}
 
 python  $root_dir/DeepHarp/Scripts/crop.py ${name}_Right.nii ${name}_Aladin.nii  ${name}_croppedMask_Right.nii ${name}_croppedROI_Right.nii 
 python  $root_dir/DeepHarp/Scripts/crop.py ${name}_Left.nii  ${name}_Aladin.nii ${name}_croppedMask_Left.nii ${name}_croppedROI_Left.nii 
-python  $root_dir/DeepHarp/Scripts/Resamp.py ${name}_croppedROI_Right.nii  ${name}_ResampRight.nii 
-python  $root_dir/DeepHarp/Scripts/Resamp.py ${name}_croppedROI_Left.nii  ${name}_ResampLeft.nii
-python  $root_dir/DeepHarp/Scripts/Norm.py ${name}_ResampRight.nii ${name}_NormRight.nii 
-python  $root_dir/DeepHarp/Scripts/Norm.py ${name}_ResampLeft.nii  ${name}_NormLeft.nii
+python  $root_dir/DeepHarp/Scripts/resamp.py ${name}_croppedROI_Right.nii  ${name}_ResampRight.nii 
+python  $root_dir/DeepHarp/Scripts/resamp.py ${name}_croppedROI_Left.nii  ${name}_ResampLeft.nii
+python  $root_dir/DeepHarp/Scripts/norm.py ${name}_ResampRight.nii ${name}_NormRight.nii 
+python  $root_dir/DeepHarp/Scripts/norm.py ${name}_ResampLeft.nii  ${name}_NormLeft.nii
 
 python  $root_dir/DeepHarp/Scripts/flip.py ${name}_NormRight.nii ${name}_croppedMask_Right.nii ${name}_ROIFineRight.nii ${name}_MaskFineRight.nii
 python  $root_dir/DeepHarp/Scripts/flip.py ${name}_NormLeft.nii ${name}_croppedMask_Left.nii ${name}_ROIFineLeft.nii ${name}_MaskFineLeft.nii
